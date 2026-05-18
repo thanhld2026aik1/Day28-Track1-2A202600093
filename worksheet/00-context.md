@@ -23,15 +23,24 @@ Việc của nhóm hôm nay đúng là việc một PM/PO AI làm ngoài doanh n
 
 ## 2. Track của nhóm (điền sau khi nhận track card)
 
-- **Track số / tên**: Track 1 — Lộ trình học cá nhân hóa
+- **Track số / tên**: Track 1 — Lộ trình học cá nhân hóa / Personalized Learning Path
 - **Big Ask — chép nguyên văn câu yêu cầu trong track card**:
 
 ```text
 Hệ thống cá nhân hóa lộ trình học cho từng học viên dựa trên mục tiêu, level, tiến độ, điểm yếu, hành vi học.
 ```
 
-- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): Học viên, coach, instructor.
-- **2 Red Flag đáng lo nhất (chép từ track card)**: 1. Cá nhân hóa giả (chỉ đổi tên, nội dung như nhau).  2. Không có cách đo "học viên có tốt lên không".
+- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): Học viên, coach.
+
+Trong phạm vi Day 28, nhóm ưu tiên hai nhóm người dùng này vì:
+
+- Học viên là người trực tiếp cần biết mình đang yếu ở đâu và nên học lại nội dung nào.
+- Coach là người cần kiểm tra, hỗ trợ và xác nhận chất lượng khuyến nghị của AI trước khi gửi cho học viên.
+
+- **2 Red Flag đáng lo nhất (chép từ track card)**:
+
+1. **Cá nhân hóa giả**: AI có thể chỉ đổi tên học viên nhưng nội dung khuyến nghị gần như giống nhau giữa các học viên. Điều này làm hệ thống trông có vẻ "personalized", nhưng thực chất không dựa trên dữ liệu học tập, điểm yếu, mục tiêu hoặc tiến độ thật của từng học viên.
+2. **Không đo được học viên có tốt lên không**: Hệ thống có thể tạo ra lộ trình học cá nhân hóa, nhưng không có cách đo rõ ràng rằng học viên có thật sự tiến bộ sau khi nhận lộ trình đó hay không. Nếu không có metric trước và sau, team sẽ không biết AI đang tạo giá trị thật hay chỉ tạo thêm một lớp khuyến nghị nghe có vẻ thông minh.
 
 ---
 
@@ -49,7 +58,52 @@ Hệ thống cá nhân hóa lộ trình học cho từng học viên dựa trên
 
 ## 4. Ghi chú thêm (tùy nhóm)
 
-[Hạn chót, quy mô data giả định nhóm dùng, ví dụ câu hỏi thật, bất kỳ thứ gì giúp AI hiểu context.]
+Nhóm chọn hướng ưu tiên là tạo Quick Win cho học viên sau Day 28:
+
+> AI phân tích bài nộp, rubric và self-assessment để chỉ ra 3 điểm yếu chính, sau đó gợi ý tài liệu hoặc bước học lại trước giai đoạn 6 tuần thực chiến.
+
+### Data giả định dùng trong pilot
+
+- Bài nộp Day 28 của học viên
+- Rubric Day 28
+- Self-assessment ngắn của học viên
+- Tài liệu khóa học / slide / LMS liên quan
+
+### Output mong muốn
+
+- 3 skill gap quan trọng nhất
+- Lý do vì sao mỗi điểm được xem là gap
+- 3 tài liệu hoặc phần học cần xem lại
+- 1 checklist học bù ngắn trong 3-5 ngày
+- Coach có quyền review trước khi gửi cho học viên
+
+### Phạm vi ưu tiên trong Day 28
+
+Trong Day 28, nhóm không xây toàn bộ hệ thống Personalized Learning Path hoàn chỉnh. Nhóm chỉ tập trung vào một lát cắt nhỏ có thể pilot nhanh:
+
+> Sau khi học viên hoàn thành bài Day 28, AI tạo một bản lộ trình học bù cá nhân hóa dựa trên bài nộp, rubric và self-assessment, sau đó coach review trước khi gửi cho học viên.
+
+### Những việc chưa làm trong phạm vi pilot
+
+Các phần sau **không nằm trong phạm vi Day 28 pilot**:
+
+- Không xây full adaptive learning engine.
+- Không xây dashboard toàn khóa cho instructor.
+- Không tự động chấm điểm chính thức.
+- Không dùng dữ liệu nhạy cảm nếu chưa có consent.
+- Không cá nhân hóa toàn bộ 6 tuần thực chiến ngay từ bản pilot đầu tiên.
+- Không để AI gửi khuyến nghị trực tiếp cho học viên mà chưa qua coach review.
+
+### Định hướng cho các bước tiếp theo
+
+File này sẽ được dùng làm context đầu vào cho các bước sau:
+
+1. `01-frame/1-intake-breakdown.md`: Tách Big Ask thành các use case nhỏ.
+2. `01-frame/2-quick-win.md`: Chọn Quick Win đầu tiên có impact, khả thi và đo được.
+3. `01-frame/3-FINAL-problem-framing.md`: Chốt vấn đề, workflow, pain evidence, constraint và validation.
+4. `02-solution/2-FINAL-solution.md`: Chọn hướng triển khai Build / Buy / Boost / Partner.
+5. `03-pilot-plan/1-pilot-plan.md`: Thiết kế pilot plan có metric, budget, timeline, người tham gia và điều kiện dừng.
+6. `03-pilot-plan/2-FINAL-pitch.md`: Đóng gói thành 5-slide pitch để xin phê duyệt pilot.
 
 ---
 
