@@ -1,4 +1,4 @@
-> **Repo:** https://github.com/VinUni-AI20k/Day28-Track01-AI-Pilot-Plan
+> **Repo:** https://github.com/thanhld2026aik1/Day28-Track1-2A202600093.git
 
 # Day 28 — Nhóm Track 1
 
